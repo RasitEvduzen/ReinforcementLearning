@@ -12,8 +12,8 @@ a     = [0,l1,l2];
 alp   = [0,0,0];
 d     = [0,0,0];
 
-theta1 = rand*pi;
-theta2 = rand*pi;
+theta1 = rand*pi-1e-1;
+theta2 = rand*pi-1e-1;
 
 trajectory_x = [];
 trajectory_y = [];

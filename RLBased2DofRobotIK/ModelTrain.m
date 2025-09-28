@@ -51,7 +51,7 @@ for episode = 1:episodes
         new_state2_idx = get_state_index(new_theta2, theta2_space);
 
         [x, y] = forward_kinematics(new_theta1, new_theta2, l1, l2);
-        distance_to_target = sqrt((x - target_x)^2 + (y - target_y)^2);
+        distance_to_target = sqrt((x - target_x)^2 + (y - target_y)^2); % Loss Function
         
         if distance_to_target < target_tolerance
             reward = 100;
